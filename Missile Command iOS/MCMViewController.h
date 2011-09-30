@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCDAsyncSocket.h"
 
-@interface MCMViewController : UIViewController
+@interface MCMViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource,NSNetServiceBrowserDelegate, NSNetServiceDelegate, GCDAsyncSocketDelegate> {
+  BOOL connected;
+}
+
+@property (strong) NSMutableArray *addressArray;
+@property (strong) NSMutableArray *servicesArray;
+@property (strong) NSNetService *serverService;
+@property (strong) NSNetServiceBrowser *serviceBrowser;
+@property (strong) GCDAsyncSocket *asyncSocket;
+
+- (void)connectToNextAddress;
 
 @end

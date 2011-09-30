@@ -2,7 +2,7 @@
 //  MCMAppDelegate.h
 //  Missile Command iOS
 //
-//  Created by Brian Michel on 9/29/11.
+//  Created by Brian Michel on 9/28/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
